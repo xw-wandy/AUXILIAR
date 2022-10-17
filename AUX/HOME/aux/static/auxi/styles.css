@@ -1,0 +1,153 @@
+*
+{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      color: black;
+}
+
+html
+{
+      font-size: 65,5px;
+}
+
+main
+{
+      font-family: 'Itim', cursive;
+}
+
+#aux-menu-header
+{
+      font-family: 'Itim', cursive;
+      border-radius: 1.2rem;
+      display: flex;
+      height: 6rem;
+      position: relative;
+      overflow: hidden;
+}
+
+.menu-principal
+{
+      margin: auto auto;
+            /* background-color: bisque; */
+}
+
+.numero-asistencia
+{
+      background-color: rgb(255, 196, 0);
+      width:10.5rem;
+      height: 6rem;
+      position: absolute;
+      right: 0;
+}
+
+.numero-asistencia .menu-principal
+{
+      margin: 2.3rem 0;
+      text-align: center;
+}
+
+/* Stylos a las tipografias del header menu */
+.menu-principal a
+{
+      margin: 0.5rem;
+      font-size: 1.1rem;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+}
+
+
+/* Styles Main */
+
+#content-principal
+{
+      display: flex;
+      flex-wrap: wrap;
+      width: 200rem;
+      max-height: 35rem;
+      justify-content: center;
+      /* background-color: antiquewhite; */
+}
+
+
+/* Section Work */
+#section-work
+{
+      background-color: rgb(160, 118, 118);
+      height: 40rem;
+      text-align: center;
+      color: aliceblue;
+      
+}
+
+#container-work
+{
+      border: solid red 2px;
+      border-radius: 2rem;
+      width: 60rem;
+      height: 35rem;
+      position: relative;
+      display: flex;
+}
+
+.rounded-circle 
+{
+      position: relative;
+      width: 25rem;
+      height: 25rem;
+      /* background-color: aliceblue; */
+      display: flex;
+      justify-content: center;
+      
+}
+
+#img-profile
+{
+      position: absolute;
+      left: auto;
+      right: auto;
+}
+
+.button
+{
+      position: absolute;
+      bottom: 4.3rem;
+      left: 5.9rem;
+      font-family: 'Itim', cursive;
+}
+
+.button-activo, .button-mensajes
+{
+      height: 3rem;
+      width: 7rem;
+      margin: 0 4px;
+      border: none;
+      border-radius: 1.2rem;
+      font-size: 1.3rem;
+}
+
+.button-activo
+{
+      background-color: rgb(6, 6, 6);
+      color: rgb(198, 255, 78);
+}
+
+.button-mensajes
+{
+      background-color: rgb(56, 100, 255);
+      color: aliceblue;
+}
+
+#data-user
+{
+      position: absolute;
+      right: 10rem;
+      background-color: aliceblue;
+      width: 10rem;
+
+}
+
+#section-work h2
+{
+      color: aliceblue;
+}

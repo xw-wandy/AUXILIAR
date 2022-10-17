@@ -1,0 +1,114 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      {% comment %} Google Fonts Itim {% endcomment %}
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+      <!-- Styles  CSS-->
+      <link rel="stylesheet" href="{% static '/auxi/styles.css' %}">
+      <!-- Bootstrap Styles -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+      <title>AUX</title>
+
+</head>
+<body>
+<header>
+            <div class="container shadow  mt-4" id="aux-menu-header">
+                  <img src="{% static '/img/Icon-aux.png' %}" alt="" width="200">
+                  <div class="menu-principal">
+                        <a href="{% url 'aux:index' %}">Inicio</a>
+                        <a href="{% url 'aux:info' %}">Informacion</a>
+                        <a href="{% url 'aux:prestamos' %}">Prestamos</a>
+                        <a href="{% url 'aux:inversiones' %}">Inversiones</a>
+                        <a href="{% url 'aux:novedad' %}">Novedades</a>
+                        <a href="{% url 'aux:ayuda' %}">Ayuda</a>
+                  </div>
+                  <div class="numero-asistencia">
+                              <div class="menu-principal" >
+                                    <a href="#">1+ 829-296-0116</a>
+                              </div>
+                  </div>
+            </div>
+
+      </header>
+      {% comment %} 
+            Main
+      {% endcomment %}
+      <main>
+            <div class='container  rounded-3 mt-5   text-center ' id='content-principal'>
+                  <div class='container-fluid'>
+                        <h2>Elegir plan</h2>
+
+                  </div>
+                        <div class="card shadow m-3 " style="width: 19rem;">
+                              <img src="{% static '/img/Equipo.png' %}" class="card-img-top" alt="...">
+                              <div class="card-body">
+                              <h5 class="card-title">Corto Plazo</h5>
+                              <p class="card-text">Ideal para ahorrarte del 97% hasta el 99% de tu prestamo escogido, lo mejor de nosotros .</p>
+                              <a href="#" class="btn bg-light shadow">Escoger</a>
+                              </div>
+                        </div>
+
+                        <div class="card shadow m-3" style="width: 19rem;">
+                              <img src="{% static '/img/trabajo.png' %}" class="card-img-top" alt="...">
+                              <div class="card-body">
+                              <h5 class="card-title">Plazo estandar</h5>
+                              <p class="card-text">Lo mejor para usuarios de salario medio, con nosotros ahorraras hasta un 70%.</p>
+                              <a href="#" class="btn bg-light shadow">Escoger</a>
+                              </div>
+                        </div>
+
+                        <div class="card shadow m-3" style="width: 19rem;">
+                              <img src="{% static '/img/Solidaridad.png' %}" class="card-img-top" alt="...">
+                              <div class="card-body">
+                              <h5 class="card-title">Plan Extendido</h5>
+                              <p class="card-text">Ideal  para usuarios vinculados a instituciones gubernamentales, unas tazas de pagos, ahorrando un 90%.</p>
+                              <a href="#" class="btn bg-light shadow">Escoger</a>
+                              </div>
+                        </div>
+                        <div class='container'>.</div>
+            </div>
+
+
+
+
+
+            {% comment %} Section of Working {% endcomment %}
+            <section class='container-fluid shadow mt-4 mb-5' id='section-work'>
+                  <h2>Trabajadores</h2>
+                  <div class='container' id='container-work'>
+                        {% comment %} 
+                        rounded-cicle is the elemente of img profile user
+                        {% endcomment %}
+                        <div class='rounded-circle mt-3'>
+                              <img src="{% static '/img/courosel-profile-profesional/Gato-gafas.png' %}" class='rounded-circle' alt=""  id='img-profile' width='300' heith=''>
+                        </div>
+
+                        <div class='button'>
+                        <button class='button-activo'>Activo</button>
+                        <button class='button-mensajes'>Mensaje</button>
+                        </div>
+
+                        <div id='data-user'>
+                              <h3>Jhon Shelby</h3>
+                              <h3>Edad: <strong>22</strong></h3>
+                              <div class='star-value'>
+                                    <strong>%78</strong>
+                              </div>
+                              <a href="#">Perfil profecional =></a>
+                        </div>
+
+                  </div>
+            </section>
+      </main>
+</body>
+</html>
